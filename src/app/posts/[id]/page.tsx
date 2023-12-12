@@ -12,7 +12,7 @@ export default async function Post ({params}: any) {
         <article>
             <h1 className=" text-violet-400 mt-[1rem] mb-[1rem]">{post.title}</h1>
             <p>{post.body}</p>
-            <Link href={`https://jsonplaceholder.typicode.com/posts/${id}/comments`} className=" bg-gray-500 p-[0.5rem] mt-[1rem] w-fit flex">
+            <Link href={`/posts/${id}/comments`} className=" bg-gray-500 p-[0.5rem] mt-[1rem] w-fit flex">
                 Ver comentarios
             </Link>
         </article>
